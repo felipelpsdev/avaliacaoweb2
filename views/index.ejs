@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Alunos</title>
+</head>
+<body>
+  <h1>Lista de Alunos</h1>
+  <a href="/aluno/cadastrar">Cadastrar Novo Aluno</a>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Telefone</th>
+        <th>Email</th>
+        <th>Nota</th>
+        <th>Situação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% alunos.forEach(aluno => { %>
+        <tr>
+          <td><%= aluno.nome %></td>
+          <td><%= aluno.telefone %></td>
+          <td><%= aluno.email %></td>
+          <td><%= aluno.nota %></td>
+          <td><%= aluno.situacao %></td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
+</body>
+</html>
