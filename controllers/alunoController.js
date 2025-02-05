@@ -1,4 +1,4 @@
-const Aluno = require('../models/alunoModel');
+import Aluno from '../models/alunoModel.js';
 
 const alunoController = {
   index: (req, res) => {
@@ -18,4 +18,4 @@ const alunoController = {
   },
 };
 
-module.exports = alunoController;
+export default alunoController;

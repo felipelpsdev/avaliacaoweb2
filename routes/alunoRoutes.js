@@ -1,9 +1,10 @@
-const express = require('express');
+import express from 'express';
+import alunoController from '../controllers/alunoController.js';
+
 const router = express.Router();
-const alunoController = require('../controllers/alunoController');
 
 router.get('/', alunoController.index);
 router.get('/cadastrar', alunoController.cadastrar);
 router.post('/salvar', alunoController.salvar);
 
-module.exports = router;
+export default router;

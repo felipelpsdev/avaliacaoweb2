@@ -1,6 +1,7 @@
-const express = require('express');
+import express from 'express';
+import alunoRoutes from './routes/alunoRoutes.js';
+
 const app = express();
-const alunoRoutes = require('./routes/alunoRoutes');
 
 // Configuração do EJS
 app.set('view engine', 'ejs');
